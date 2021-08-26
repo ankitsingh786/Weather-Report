@@ -8,3 +8,4 @@ Awesome Validation :- Used to Validate String
 
 # Android Apk
 The apk are in the release folder
+https://github.com/ankitsingh786/Weather-Report/tree/master/release
