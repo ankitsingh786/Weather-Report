@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WeatherReport" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#034455</item>
+        <item name="colorPrimaryVariant">#044A5C</item>
+        <item name="colorOnPrimary">#B9074C5E</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#B90A88A8</item>
+        <item name="colorSecondaryVariant">#B90A88A8</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+</resources>

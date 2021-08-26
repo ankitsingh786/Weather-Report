@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/untitled"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="100dp"
+        app:cardBackgroundColor="#B90A88A8"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="Registration"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold">
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#B90A88A8"
+        app:cardElevation="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/loginemail"
+                    style="@style/LoginTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    app:shapeAppearance="@style/Cut"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="#fff"
+                    android:textColorHighlight="#fff"
+                    android:textColorHint="#fff"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50"
+                    app:counterTextColor="@color/white"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="#FFFFFF"
+                    app:hintTextColor="@color/white"
+                    app:startIconDrawable="@drawable/ic_baseline_person_24"
+                    app:startIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/first_name"
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="20sp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mobile"
+                    style="@style/LoginTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Mobile Number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColor="#fff"
+                    android:textColorHighlight="#fff"
+                    android:textColorHint="#fff"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:shapeAppearance="@style/Cut"
+                    app:counterTextColor="@color/white"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="#FFFFFF"
+                    app:hintTextColor="@color/white"
+                    app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+                    app:startIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="20sp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/LoginTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Date Of Birth"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColor="#fff"
+                    android:textColorHighlight="#fff"
+                    android:textColorHint="#fff"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:shapeAppearance="@style/Cut"
+                    app:counterTextColor="@color/white"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="#FFFFFF"
+                    app:hintTextColor="@color/white"
+                    app:startIconDrawable="@drawable/ic_baseline_date_range_24"
+                    app:startIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:id="@+id/dobs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="10"
+                        android:inputType="date"
+                        android:textColor="@color/white"
+                        android:textSize="20sp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/white"
+                    app:helperText="Required*"
+                    app:shapeAppearance="@style/Cut"
+                    android:hint="Select Your Gender"
+                    android:textColorHint="@color/white"
+                    app:helperTextTextColor="@color/white"
+                    style="@style/LoginTextInputLayout"
+                    android:layout_marginBottom="10dp">
+
+                    <AutoCompleteTextView
+
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:inputType="none"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/address"
+                    style="@style/LoginTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Address Line 1"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="#fff"
+                    android:textColorHighlight="#fff"
+                    android:textColorHint="#fff"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50"
+                    app:shapeAppearance="@style/Cut"
+
+                    app:counterTextColor="@color/white"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="#FFFFFF"
+
+                    app:hintTextColor="@color/white"
+                    app:startIconDrawable="@drawable/ic_baseline_home_24"
+                    app:startIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:id="@+id/add_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+
+                        android:maxLength="10"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="20sp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addresss"
+                    style="@style/LoginTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+
+                    android:layout_marginBottom="10dp"
+
+
+                    android:hint="Address Line 2"
+
+
+                    android:maxLength="50"
+
+                    android:maxLines="1"
+
+                    android:textColor="#fff"
+                    android:textColorHighlight="#fff"
+                    android:textColorHint="#fff"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50"
+                    app:shapeAppearance="@style/Cut"
+
+                    app:counterTextColor="@color/white"
+
+
+                    app:hintTextColor="@color/white"
+                    app:startIconDrawable="@drawable/ic_baseline_home_24"
+                    app:startIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="20sp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+
+                        android:layout_marginBottom="10dp"
+
+
+
+
+                        android:maxLength="6"
+
+                        android:maxLines="1"
+
+                        android:textColor="#fff"
+                        android:textColorHighlight="#fff"
+                        android:textColorHint="#fff"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="6"
+                        app:helperText="Required*"
+                        app:helperTextTextColor="@color/white"
+
+                        app:shapeAppearance="@style/Cut"
+
+                        app:counterTextColor="@color/white"
+
+
+                        android:drawablePadding="10dp"
+                        android:hint="Pincode"
+                        android:inputType="number"
+
+                        app:hintTextColor="@color/white"
+                        app:startIconDrawable="@drawable/ic_baseline_person_pin_circle_24"
+                        app:startIconTint="@color/white">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/pincode"
+                            style="@style/LoginTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+
+                            android:maxLength="6"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:textColor="@color/white"
+                            android:textSize="20sp">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/check_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+android:drawableTint="@color/white"
+        android:backgroundTint="@color/white"
+
+        android:onClick="getPinDetail"
+        android:background="@drawable/shapesignup"
+        android:padding="10dp"
+        android:enabled="false"
+
+        android:layout_marginStart="10dp"
+        android:text="Check"
+
+
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:fontFamily="@font/ubuntu_regular"
+
+        android:textStyle="bold">
+
+    </Button>
+
+
+
+</LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:id="@+id/state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:layout_marginStart="100dp"
+                        android:textAlignment="viewStart">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/pinresult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+android:fontFamily="@font/ubuntu_regular"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:textAlignment="viewStart">
+
+                    </TextView>
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Register"
+
+
+                    android:elevation="8dp"
+
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/shapesignup">
+
+                </Button>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

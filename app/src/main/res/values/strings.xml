@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Weather Report</string>
+    <string name="invalid_name">Please enter your name</string>
+    <string name="invalid_number">Please enter your mobile number</string>
+    <string name="invalid_address">Please enter your address</string>
+    <string name="invalid_pincode">Enter valid pincode</string>
+    <string name="invalid_dob">Enter your date of birth</string>
+    <string name="invalid_gender">Select your gender</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>
